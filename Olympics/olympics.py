@@ -13,3 +13,5 @@ data2.head(3)
 data2['Country_code'] = data2.Country.str.split('(').str.get(1)
 data2['Country'] = data2.Country.str.split('(').str.get(0)
 data2.head(3)
+
+save(data2)
